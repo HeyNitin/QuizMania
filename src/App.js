@@ -1,9 +1,13 @@
 import "./App.css";
-import logo from "./logo.png";
-import Mockman from "mockman-js";
+import Routes from "./components/Routes.js";
 
 function App() {
-  return <div className="App"></div>;
+  console.log(Routes);
+  return (
+    <div className="App">
+      <Routes />
+    </div>
+  );
 }
 
 export default App;
