@@ -1,0 +1,16 @@
+body {
+  background-color: var(--off-white);
+  margin: 0;
+}
+.header {
+  display: flex;
+  padding: var(--padding-md);
+}
+
+.header-logo {
+  cursor: pointer;
+}
+
+.header-logo:hover {
+  color: var(--btn-color-primary);
+}

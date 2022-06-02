@@ -1,0 +1,10 @@
+@import url(https://lekhni.netlify.app/css/components.css);
+
+@import "variables.css";
+@import "header.css";
+@import "footer.css";
+@import "homepage.css";
+@import "categories.css";
+@import "questions-page.css";
+@import "quizes-listing-page.css";
+@import "result.css";

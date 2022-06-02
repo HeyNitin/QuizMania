@@ -1,0 +1,36 @@
+.homepage-container .img-container {
+  position: absolute;
+  right: 10%;
+  top: 1rem;
+}
+
+.homepage-container .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 85vh;
+}
+
+.homepage-container button {
+  z-index: 1;
+}
+
+p span {
+  display: block;
+}
+
+.homepage-container p {
+  font-size: larger;
+}
+
+.btn-cta {
+  cursor: pointer;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+}
+
+.btn-cta:hover {
+  background-color: var(--btn-color-primary);
+}

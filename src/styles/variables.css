@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --off-white: rgb(221, 213, 213);
+  --btn-color-primary: rgb(218, 188, 19);
+  --green: rgb(33, 223, 33);
+  --red: rgb(245, 7, 7);
+
+  /* Padding */
+  --padding-btn: 0.5rem 1rem;
+  --padding-md: 1rem;
+
+  /* Gap */
+  --gap: 2rem;
+  --gap-sm: 1rem;
+}
