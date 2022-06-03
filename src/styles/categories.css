@@ -1,0 +1,58 @@
+.quiz-categories {
+  display: flex;
+  margin-top: 2rem;
+  gap: var(--gap);
+  flex-wrap: wrap;
+  padding: var(--padding-md);
+  align-items: center;
+}
+.quiz-categories .card {
+  flex-grow: 1;
+  width: 18rem;
+  height: 20rem;
+  margin: 0;
+  padding: var(--padding-md);
+  background-color: var(--white);
+  flex-direction: column;
+}
+
+.quiz-categories .card img {
+  width: 100%;
+  height: 15rem;
+}
+
+.quiz-categories .card > * {
+  margin: 0 auto 0 auto;
+}
+
+.quiz-categories .card .heading-sub {
+  margin: 0;
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-md);
+}
+
+.footer .social {
+  display: flex;
+  gap: var(--gap);
+}
+.footer .social .fa {
+  color: var(--black);
+}
+
+.footer .social .fa:hover {
+  color: var(--btn-color-primary);
+}
+
+.quiz-categories .card .header {
+  cursor: pointer;
+}
+
+.quiz-categories .card .header a:any-link {
+  text-decoration: none;
+  color: var(--black);
+}
