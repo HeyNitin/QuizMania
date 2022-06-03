@@ -1,12 +1,21 @@
 .quiz-rules {
-  padding: var(--padding-md);
-  width: 30rem;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  gap: 0.5rem;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+.quiz-rules button {
+  cursor: pointer;
+  background-color: var(--btn-color-primary);
+}
+.quiz-rules button:hover {
+  background-color: var(--btn-color-hover);
+}
+
+.quiz-rules button:disabled {
+  cursor: not-allowed;
+  background-color: var(--btn-color-primary);
 }

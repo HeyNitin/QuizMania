@@ -1,21 +1,26 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useQuiz } from "../contexts/quizContext";
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
 
-  useState(
-    () =>
-      (async () => {
-        try {
-          const { data } = await axios.get("/api/categories");
-          setCategories(data.categories);
-        } catch (error) {
-          console.error(error);
-        }
-      })(),
-    []
-  );
+  let Navigate = useNavigate();
+
+  let { setQuiz } = useQuiz();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await axios.get("/api/categories");
+        setCategories(data.categories);
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+    setQuiz([]);
+  }, []);
 
   return (
     <div>
@@ -23,12 +28,14 @@ const Categories = () => {
       <div className="quiz-categories">
         {categories.map((item) => {
           return (
-            <div className="card card-basicHeader">
+            <div
+              key={item._id}
+              onClick={() => Navigate(`/rules/${item.categoryName}`)}
+              className="card card-basicHeader"
+            >
               <img className="img-responsive" src={item.img} alt="quiz-img" />
               <div className="header">
-                <a href="pages/bollywood-quizes.html" className="heading-sub">
-                  {item.categoryName}
-                </a>
+                <p className="heading-sub">{item.categoryName}</p>
               </div>
             </div>
           );

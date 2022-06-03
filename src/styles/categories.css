@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   padding: var(--padding-md);
   align-items: center;
+  min-height: 65vh;
 }
 .quiz-categories .card {
   flex-grow: 1;
@@ -14,6 +15,7 @@
   padding: var(--padding-md);
   background-color: var(--white);
   flex-direction: column;
+  cursor: pointer;
 }
 
 .quiz-categories .card img {
@@ -27,32 +29,4 @@
 
 .quiz-categories .card .heading-sub {
   margin: 0;
-}
-
-.footer {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  padding: var(--padding-md);
-}
-
-.footer .social {
-  display: flex;
-  gap: var(--gap);
-}
-.footer .social .fa {
-  color: var(--black);
-}
-
-.footer .social .fa:hover {
-  color: var(--btn-color-primary);
-}
-
-.quiz-categories .card .header {
-  cursor: pointer;
-}
-
-.quiz-categories .card .header a:any-link {
-  text-decoration: none;
-  color: var(--black);
 }

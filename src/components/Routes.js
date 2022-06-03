@@ -15,7 +15,7 @@ const Routes = () => {
       <Route path="/categories" element={<Categories />} />
       <Route path="/rules/:quizName" element={<Rules />} />
       <Route path="/questions/:quizName" element={<Questions />} />
-      <Route path="/result" element={<Result />} />
+      <Route path="/result/:quizName" element={<Result />} />
       <Route path="*" element={<Error404 />} />
     </R>
   );

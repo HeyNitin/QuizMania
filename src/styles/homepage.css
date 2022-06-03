@@ -1,7 +1,7 @@
 .homepage-container .img-container {
   position: absolute;
   right: 10%;
-  top: 1rem;
+  top: 0;
 }
 
 .homepage-container .text {
@@ -9,11 +9,12 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  height: 85vh;
+  height: 80vh;
 }
 
 .homepage-container button {
   z-index: 1;
+  background-color: var(--btn-color-primary);
 }
 
 p span {
@@ -32,5 +33,5 @@ p span {
 }
 
 .btn-cta:hover {
-  background-color: var(--btn-color-primary);
+  background-color: var(--btn-color-hover);
 }
