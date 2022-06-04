@@ -21,7 +21,8 @@ const Questions = () => {
 
         setQuiz(quizes.filter((quiz) => quiz.categoryName === quizName));
       } catch (error) {
-        console.error(error);
+        alert("Something went wrong");
+        Navigate("/");
       }
     })();
 

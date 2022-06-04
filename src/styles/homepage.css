@@ -1,10 +1,5 @@
-.homepage-container .img-container {
-  position: absolute;
-  right: 10%;
-  top: 0;
-}
-
-.homepage-container .text {
+.homepage-container .item-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

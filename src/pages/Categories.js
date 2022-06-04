@@ -16,7 +16,8 @@ const Categories = () => {
         const { data } = await axios.get("/api/categories");
         setCategories(data.categories);
       } catch (error) {
-        console.error(error);
+        alert("Something went wrong");
+        Navigate("/");
       }
     })();
     setQuiz([]);

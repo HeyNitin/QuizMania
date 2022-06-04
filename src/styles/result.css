@@ -11,7 +11,7 @@
 .questions-container button {
   padding: var(--padding-md);
   background-color: var(--btn-color-primary);
-  width: 30rem;
+  width: 25rem;
   margin: 0.5rem;
   border-radius: 1rem;
 }
