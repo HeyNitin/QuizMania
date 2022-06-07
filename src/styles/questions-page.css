@@ -16,9 +16,3 @@
 .questions-container .button:hover {
   background-color: var(--btn-color-hover);
 }
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
