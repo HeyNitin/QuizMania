@@ -9,10 +9,10 @@
 ## Table of Contents
 
 - [About](#about)
-- [Technologies used](#technologies-used)
+- [Technologies Used](#technologies-used)
 - [Live link](#live-link)
 - [Getting Started](#getting-started)
-- [Screenshots](#screenshots)
+- [ScreenShots](#screenshots)
 - [Connect with me](#-connect-with-me)
 
 
@@ -25,14 +25,14 @@ Hollywood
 Maths Trivia
 
  
-## Technologies Used - 
+## Technologies Used
 - ReactJS
 - Vanilla CSS
 - [Lekhni-UI](https://github.com/HeyNitin/Lekhni-UI) component library
 - [Mockbee](https://github.com/neogcamp/mockBee) for backend
 
 
-## Live link - 
+## Live link
 Live site : [QuizMania](https://quizmaniaaa.netlify.app/)
 
 ## Getting Started
@@ -63,7 +63,7 @@ REACT_APP_JWT_SECRET = <JWT_SECRET_KEY_OF_YOUR_CHOICE>
 npm start
 ```
 
-## ScreenShots - 
+## ScreenShots
 
 
 
