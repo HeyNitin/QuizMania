@@ -12,5 +12,5 @@ body {
 }
 
 .header-logo:hover {
-  color: var(--btn-color-primary);
+  color: var(--btn-color-hover);
 }

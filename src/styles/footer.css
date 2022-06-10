@@ -1,13 +1,8 @@
-body {
-  background-color: var(--off-white);
-  margin: 0;
-}
-
 .footer {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   padding: var(--padding-md);
+  margin-top: auto;
 }
 
 .footer .social {
@@ -19,5 +14,5 @@ body {
 }
 
 .footer .social .fa:hover {
-  color: var(--btn-color-primary);
+  color: var(--btn-color-hover);
 }
