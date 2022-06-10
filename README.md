@@ -64,6 +64,9 @@ npm start
 ```
 
 ## ScreenShots
+![image](https://user-images.githubusercontent.com/23723159/173063573-ea7966ee-b82b-40c3-8c78-9cbed93b13b1.png)
+![image](https://user-images.githubusercontent.com/23723159/173063731-8de97587-7188-43f8-b689-f4c133a12e9d.png)
+![image](https://user-images.githubusercontent.com/23723159/173063716-7ac2353b-fc7e-430f-a821-dcb8c08717b1.png)
 
 
 
