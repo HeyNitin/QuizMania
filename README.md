@@ -1,7 +1,8 @@
 <div align="center">
  
  
- 
+ ![quiz](https://user-images.githubusercontent.com/23723159/173058255-52f534c8-8d8b-4c81-bf09-b5b74670cfe8.png)
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ce39af43-72a2-446a-8330-f534e715f36a/deploy-status)](https://app.netlify.com/sites/buy-with-us/deploys)
  
