@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useRules } from "../contexts/rulesContext";
 
 const Rules = () => {
   const [isCheckBoxOn, setIsCheckBoxOn] = useState(false);
-  let Navigate = useNavigate();
-  let { quizName } = useParams();
+  const Navigate = useNavigate();
+  const { quizName } = useParams();
+  const { setIsRulesAgreed } = useRules();
+
+  useDocumentTitle(`${quizName}'s Rules`);
   return (
     <div className="quiz-rules">
       <h1 className="heading-sm">Rules</h1>
@@ -15,7 +20,10 @@ const Rules = () => {
       </ol>
       <label>
         <input
-          onChange={(e) => setIsCheckBoxOn(e.target.checked)}
+          onChange={(e) => {
+            setIsRulesAgreed(true);
+            setIsCheckBoxOn(e.target.checked);
+          }}
           type="checkbox"
         />
         I agree to above mentioned Rules.

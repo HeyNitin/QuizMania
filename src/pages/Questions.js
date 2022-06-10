@@ -3,30 +3,40 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useAnswer } from "../contexts/answerContext";
 import { useQuiz } from "../contexts/quizContext";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useToast } from "../components/Toast";
+import { useRules } from "../contexts/rulesContext";
 
 const Questions = () => {
-  let { quizName } = useParams();
-  let Navigate = useNavigate();
+  const { quizName } = useParams();
+  const Navigate = useNavigate();
   const { quiz, setQuiz } = useQuiz();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-
   const { setAnswers } = useAnswer();
+  const { showToast } = useToast();
+  const { isRulesAgreed } = useRules();
+
+  useDocumentTitle(`${quizName}'s Questions`);
 
   useEffect(() => {
-    (async () => {
-      try {
-        const {
-          data: { quizes },
-        } = await axios.get("/api/quizzes");
+    if (!isRulesAgreed) {
+      Navigate(`/rules/${quizName}`);
+      showToast("info", "Please go through the rules first");
+    } else {
+      (async () => {
+        try {
+          const {
+            data: { quizes },
+          } = await axios.get("/api/quizzes");
 
-        setQuiz(quizes.filter((quiz) => quiz.categoryName === quizName));
-      } catch (error) {
-        alert("Something went wrong");
-        Navigate("/");
-      }
-    })();
-
-    setAnswers([]);
+          setQuiz(quizes.filter((quiz) => quiz.categoryName === quizName));
+        } catch (error) {
+          showToast("error", "Something went wrong");
+          Navigate("/");
+        }
+      })();
+      setAnswers([]);
+    }
   }, [quizName]);
 
   const clickHandler = (option) => {

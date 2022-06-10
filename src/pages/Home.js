@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 const Home = () => {
   let Navigate = useNavigate();
+  useDocumentTitle("Home");
+
   return (
     <div className="homepage-container">
       <div className="item-container">

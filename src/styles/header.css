@@ -14,3 +14,17 @@ body {
 .header-logo:hover {
   color: var(--btn-color-hover);
 }
+
+.header button {
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  width: 4rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+.header button:hover {
+  background-color: var(--btn-color-hover);
+}

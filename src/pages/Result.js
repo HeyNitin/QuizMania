@@ -1,11 +1,19 @@
 import { useAnswer } from "../contexts/answerContext";
 import { useQuiz } from "../contexts/quizContext";
 import { useState, useEffect } from "react";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useParams, useNavigate } from "react-router-dom";
+import { useToast } from "../components/Toast";
 
 const Result = () => {
   const { answers } = useAnswer();
   const { quiz } = useQuiz();
   const [finalScore, setFinalScore] = useState(0);
+  const { quizName } = useParams();
+  const Navigate = useNavigate();
+  const { showToast } = useToast();
+
+  useDocumentTitle(`${quizName}'s Result`);
 
   if (quiz[0]) {
     useEffect(
@@ -56,6 +64,11 @@ const Result = () => {
       </div>
     );
   } else {
+    useEffect(() => {
+      Navigate(`/rules/${quizName}`);
+      showToast("info", "Please Agree to the rules first");
+    }, []);
+
     return <div></div>;
   }
 };
