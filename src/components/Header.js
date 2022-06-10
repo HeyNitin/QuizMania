@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/authContext";
+import { useToast } from "./Toast";
 
 const Header = () => {
   const Navigate = useNavigate();
-  const { token } = useAuth();
+  const { token, setToken } = useAuth();
+  const { showToast } = useToast();
 
   const logoutHandler = () => {
     setToken(false);
