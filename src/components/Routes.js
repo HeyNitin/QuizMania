@@ -1,5 +1,4 @@
 import { Routes as R, Route } from "react-router";
-
 import Error404 from "../pages/Error404";
 import Home from "../pages/Home";
 import Categories from "../pages/Categories";
