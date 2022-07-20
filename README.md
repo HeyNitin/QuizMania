@@ -2,7 +2,7 @@
  
 ![quiz-removebg-preview](https://user-images.githubusercontent.com/23723159/173058450-35ad233c-83c9-4964-8fff-053ee5da79ad.png) 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ce39af43-72a2-446a-8330-f534e715f36a/deploy-status)](https://app.netlify.com/sites/buy-with-us/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bc172842-c888-4f34-ac10-7185d739350c/deploy-status)](https://app.netlify.com/sites/quizmaniaaa/deploys)
 
 </div>
 
